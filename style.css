@@ -19,7 +19,6 @@ body{
     background-color: hsl(0, 0%, 100%);
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    
 
 }
 
@@ -179,4 +178,23 @@ button{
     padding-top: 17px;
     border-width: 0;
 }
-margin-top: 20px ;
+
+@media screen and (max-width: 875px){
+*{
+
+    /* background-color: black; */
+    
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+
+}
+body{
+    height: 100%;
+    padding: 10px 0px;
+}
+}
+
