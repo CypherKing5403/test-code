@@ -1,0 +1,130 @@
+/* CSS Reset */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://cdn.discordapp.com/attachments/1087571745801768981/1146507162898665553/luca-micheli-ruWkmt3nU58-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Form  */
+#form{
+    background-color: rgba(255, 255, 255, 0.089) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 0, 0, 0.3);
+    width: 400px ;
+    height: 460px;
+    border-radius: 10px;
+}
+
+
+/* Header(h1) */
+
+h1{
+   position: relative;
+   bottom:50px; 
+   font-size: 40px;
+   color: white;
+}
+
+/* Inputs */
+input{
+    margin: 5px;
+    background: transparent;
+    width: 300px;
+    height: 20px;
+    color: white;
+    padding: 12px 5px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+/* crown logo */
+.fa-solid{
+    color: white;
+    position: relative;
+    bottom: 40px;
+}
+
+input::placeholder{
+color: white;
+}
+
+#checkboxLabel{
+    position: relative;
+    right: 40px;
+    color: white;
+    top: 10px;
+}
+
+#rememberMe{
+    width: fit-content;
+    height: fit-content;
+    color: black;
+}
+
+#forgetPassword{
+    text-decoration: none;
+    position: relative;
+    left: 40px;
+    color: white;
+    top: 10px;
+}
+#forgetPassword:hover{
+    color: red;
+}
+
+button{
+    padding: 5px;
+    margin-top: 30px;
+    width: 310px;
+    height: 35px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: rgb(241, 93, 93);
+}
+
+#mail{
+    position: relative;
+    left: 130px;
+    top: 98px;
+    font-size: 15px;
+    color: white;
+}
+#key{
+    position: relative;
+    left: 130px;
+    top: 138px;
+    font-size: 15px;
+    color: white;
+}
+
+#account{
+    color: white;
+    position: relative;
+  top: 10px;
+}
+ #Register{
+    color: white;
+    position: relative;
+    top: 10px;
+ }
+ #Register:hover{
+    color: red;
+ }
+
+
+
