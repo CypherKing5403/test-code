@@ -1,200 +1,127 @@
-@import url(https://fonts.google.com/specimen/Hanken+Grotesk);
+/* CSS Reset */
 *{
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
 }
-
 body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     width: 100%;
-    background:linear-gradient(white,#f3f3f3);
-    /* background-color: hsl(0, 0%, 100%); */
-}
-#container{
-    /* height: 50%;
-    width: 200px; */
-    background-color: hsl(0, 0%, 100%);
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-
+    height: 100vh;
+    background-image: url('https://cdn.discordapp.com/attachments/1087571745801768981/1146507162898665553/luca-micheli-ruWkmt3nU58-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#leftc{
-    background: linear-gradient( #6642fe ,#382fec);
-    width: 350px;
-    height: 450px;
+
+/* Form  */
+#form{
+    background-color: rgba(255, 255, 255, 0.089) ;
     display: flex;
-    float: left;
     flex-direction: column;
-    align-items: center;
-    padding-top:40px ;
-    border-radius: 25px;
-    color: white;
-}
-
-#circle{
-    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: 30px;
-    /* border: 1px solid black; */
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(#4925cf ,#4533eb ) 
-}
-#circle h1{
-    font-size: 75px;
+    border: 2px solid rgba(255, 0, 0, 0.3);
+    width: 400px ;
+    height: 460px;
+    border-radius: 10px;
 }
 
-#p1{
-    width: 60%;
-    margin-top: 13px;
-    text-align: center;
-    font-size: 18px;
-}
-#rightc{
-    width: 272px;
-    height: 450px;
-    display: flex;
-    float: right;
-    flex-direction: column;
-    /* align-items: center; */
-    padding-top:40px ;
-    padding-left: 40px ;
-    padding-right: 40px;
-    border-width: 10px;
-    border-color: black;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background-color: white;
+
+/* Header(h1) */
+
+h1{
+   position: relative;
+   bottom:50px; 
+   font-size: 40px;
+   color: white;
 }
 
-#react1{
-    display: flex;
-    padding: 13px;
-    background-color: #fff6f5;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border-radius: 9px;
+/* Inputs */
+input{
+    margin: 5px;
+    background: transparent;
+    width: 300px;
+    height: 20px;
+    color: white;
+    padding: 12px 5px;
+    border: none;
+    border-bottom: 1px solid black;
 }
 
-#reaction{
-    padding-left: 13px;
+/* crown logo */
+.fa-solid{
+    color: white;
+    position: relative;
+    bottom: 40px;
+}
+
+input::placeholder{
+color: white;
+}
+
+#checkboxLabel{
+    position: relative;
+    right: 40px;
+    color: white;
+    top: 10px;
+}
+
+#rememberMe{
+    width: fit-content;
+    height: fit-content;
+    color: black;
+}
+
+#forgetPassword{
+    text-decoration: none;
+    position: relative;
+    left: 40px;
+    color: white;
+    top: 10px;
+}
+#forgetPassword:hover{
     color: red;
 }
 
-#r80{
-    padding-left: 85px;
-    padding-right: 5px;
-}
-
-#react1 p{
-    position: relative;
-    top: 2px;
-}
-
-#mem1{
-    display: flex;
-    padding: 13px;
-    background-color: #fffbf2;
-    margin-bottom: 20px;
-    border-radius: 9px;
-    
-}
-
-#memory{
-    padding-left: 13px;
-    color: #ffb21e;
-}
-
-#mem1 p{
-    position: relative;
-    top: 2px;
-}
-#m92{
-    padding-left: 88px;
-    padding-right: 5px;
-}
-
-#verb1{
-    display: flex;
-    padding: 13px;
-    background-color: #f2fafa;
-    margin-bottom: 20px;
-    border-radius: 9px;
-    
-}
-
-#verbal{
-    padding-left: 13px;
-    color: #00bb8f;
-}
-
-#verb1 p{
-    position: relative;
-    top: 2px;
-}
-
-#v61{
-    padding-left: 103px;
-    padding-right: 5px;
-}
-
-#vis1{
-    display: flex;
-    padding: 13px;
-    background-color: #f3f3fd;
-    margin-bottom: 20px;
-    border-radius: 9px;
-    
-}
-
-#vis1 p{
-    position: relative;
-    top: 2px;
-}
-
-#visual{
-    padding-left: 13px;
-    color: #1125d6;
-}
-
-#v72{
-    padding-left: 103px;
-    padding-right: 5px;
-}
-
 button{
-    background-color: #303b59;
+    padding: 5px;
+    margin-top: 30px;
+    width: 310px;
+    height: 35px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: rgb(241, 93, 93);
+}
+
+#mail{
+    position: relative;
+    left: 130px;
+    top: 98px;
+    font-size: 15px;
     color: white;
-    padding: 15px;
-    border-radius: 40px;
-    font-size: 18px;
-    padding-top: 17px;
-    border-width: 0;
+}
+#key{
+    position: relative;
+    left: 130px;
+    top: 138px;
+    font-size: 15px;
+    color: white;
 }
 
-@media screen and (max-width: 875px){
-*{
-
-    /* background-color: black; */
-    
+#account{
+    color: white;
+    position: relative;
+  top: 10px;
 }
-#container{
-    display: flex;
-    flex-direction: column;
-    justify-content:center ;
-    align-items: center;
-
-}
-body{
-    height: 100%;
-    padding: 10px 0px;
-}
-}
-
+ #Register{
+    color: white;
+    position: relative;
+    top: 10px;
+ }
+ #Register:hover{
+    color: red;
+ }
